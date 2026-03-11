@@ -44,7 +44,9 @@ public class DatabaseSetUp {
                     patient_id INT REFERENCES patients(id) ON DELETE CASCADE,
                     doctor_id INT REFERENCES doctors(id) ON DELETE CASCADE,
                     appointment_date DATE NOT NULL,
+                    status VARCHAR(20),
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                     
                 )
             """;
 
