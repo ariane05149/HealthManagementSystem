@@ -1,10 +1,11 @@
 package model;
+import java.sql.Date;
 
 public class Patient {
     private int id;
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String gender;
     private String phoneNumber;
     private String email;
@@ -12,7 +13,7 @@ public class Patient {
 
     }
 
-    public Patient(int id, String firstName, String lastName, String dateOfBirth, String gender, String phoneNumber, String email) {
+    public Patient(int id, String firstName, String lastName, Date dateOfBirth, String gender, String phoneNumber, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -46,11 +47,12 @@ public class Patient {
         this.lastName = lastName;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
+
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
